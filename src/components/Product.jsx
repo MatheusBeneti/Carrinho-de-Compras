@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from 'react-toastify';
 
 const Product = ({ product }) => {
 
@@ -9,10 +10,9 @@ const Product = ({ product }) => {
     };
 
     const addToCart = () => {
-        // Obter os dados existentes do localStorage
+
         let localStorageData = JSON.parse(localStorage.getItem('productsInCart')) || [];
 
-        // Dados do produto atual
         const productData = {
             name: product.name,
             price: product.price,
@@ -20,11 +20,11 @@ const Product = ({ product }) => {
             quantity: quantity 
         };
 
-        localStorageData.push(productData)
-        localStorage.setItem('productsInCart', JSON.stringify(localStorageData))
-        
+        localStorageData.push(productData);
+        localStorage.setItem('productsInCart', JSON.stringify(localStorageData));
+
+        toast.success(`${product.name} foi adicionado ao carrinho!`);
     };
-    
 
     return (
         <div className="product">

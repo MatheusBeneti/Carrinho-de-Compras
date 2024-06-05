@@ -3,7 +3,7 @@ body{
 }
 
 html{
-  background-color: #898989;
+  background-color: #e2e2e2;
 }
 
 #root{
@@ -11,7 +11,7 @@ html{
 }
 
 nav {
-  background-color: #121494; /* Cor de fundo da barra de navegação */
+  background-color: #292929; /* Cor de fundo da barra de navegação */
   width: 100%;
   padding: 12px;
   display: flex;
@@ -66,10 +66,32 @@ footer h1{
   margin-top: 50px;
 }
 
+/* Estilo para a mensagem de carrinho vazio */
+.empty-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  font-size: 24px;
+  color: #777;
+  background-color: #f9f9f9;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Estilo adicional para texto */
+.empty-cart h1 {
+  font-size: 36px;
+  color: #333;
+}
+
 
 .product,
 .cart-item {
-  background-color: rgb(222, 212, 212);
+  background-color: rgb(210, 210, 210);
   padding: 20px;
   margin: 10px;
   border-radius: 5px;
