@@ -17,7 +17,7 @@ const Cart = () => {
         const updatedProducts = products.filter(product => product.name !== productName);
         setProducts(updatedProducts);
         localStorage.setItem('productsInCart', JSON.stringify(updatedProducts));
-        // Mostrar feedback visual
+
         toast.info(`${productName} foi removido do carrinho!`);
     };
 

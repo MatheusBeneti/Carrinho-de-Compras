@@ -8,7 +8,7 @@ const NavBar = () => {
                     <NavLink 
                         className={({ isActive }) => (isActive ? 'active-link' : '')} 
                         to="/Carrinho-de-Compras" 
-                        end // Adiciona a propriedade 'end' aqui
+                        end 
                     >
                         Produtos
                     </NavLink>

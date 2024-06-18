@@ -28,6 +28,7 @@ const Product = ({ product }) => {
 
     return (
         <div className="product">
+            {console.log(product.image)}
             <img src={product.image} alt={product.name} />
             <h3>{product.name}</h3>
             <p>R${product.price}</p>

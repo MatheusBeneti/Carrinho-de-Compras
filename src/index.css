@@ -128,24 +128,10 @@ button{
 }
 
 button:hover{
-  background-color: green;
+  background-color: rgb(3, 82, 3);
 }
 
 .product select{
   height: 40px;
 }
 
-
-
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  button {
-    background-color: #f9f9f9;
-  }
-}
